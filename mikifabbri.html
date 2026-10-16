@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Miki Fabbri</title>
+
+<!-- ① Google Fontsから「Charis SIL」の読み込みコードを借りてくる -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+   
+<style>
+    /* ここから見た目（CSS）の設定 */
+
+    body {
+      /* 左上から右下へ、淡いサーモンピンク(#ffdac1)からやわらかい黄色(#fff3b0)へ */
+    background: linear-gradient(135deg, #E97451, #FFBF00);
+    
+    /* 画面全体にグラデーションをきれいに広げるためのおまじない */
+    min-height: 100vh;
+    margin: 0;
+
+      text-align: center;       /* 文字や画像をすべて中央揃えに */
+      font-family: 'PT Serif Caption', serif;  
+      padding: 40px 20px;       /* ページの上下左右に少し余白をつける */
+    }
+
+    /* 箇条書きのぽっち（黒丸）を消して綺麗に並べる */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    /* リンクの見た目を少し整える */
+    li {
+      margin: 15px 0;
+    }
+
+h1 {
+    font-size: 42px; /* 少しゆったり読める大きさ */
+  }
+
+p {
+    font-size: 20px; /* 少しゆったり読める大きさ */
+  }
+
+h2 {
+    font-size: 28px; /* 少しゆったり読める大きさ */
+  }
+
+li {
+    font-size: 20px; /* 少しゆったり読める大きさ */
+  }
+
+.subtitle {
+    font-size: 22px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-top: -10px;
+    
+    /* ↓ ここで下（pタグや画像）との間の余白を調整します */
+    margin-bottom: 60px; /* 数値を大きくすると余白が広 broad がります */
+  }
+
+.gallery {
+  display: flex;             /* 画像を横並びにする */
+  flex-wrap: wrap;           /* 端まで行ったら自動で改行する */
+  justify-content: center;   /* 全体を中央に寄せる */
+  gap: 15px;                 /* 画像と画像の間隔（隙間） */
+  max-width: 900px;          /* ギャラリー全体の最大幅 */
+  margin: 0 auto 50px auto;  /* 画面の中央に配置し、下に50pxの余白 */
+}
+
+/* ギャラリー内の各画像の設定（1行に3枚並べる計算） */
+.gallery img {
+  width: calc(33.333% - 10px); /* 1行にちょうど3枚収まる幅 */
+  height: auto;                /* 縦横比を崩さない */
+  object-fit: cover;           /* サイズが異なっても綺麗に揃える */
+  border-radius: 4px;          /*（お好みで）角をほんのり丸く */
+}
+
+  </style>
+
+
+
+
+
+</head>
+<body>
+    <h1>Miki Fabbri</h1>
+<!-- サブタイトル（読み方） -->
+<p class="subtitle">ファブリ美来</p>
+
+    <p class="bio">Raised in France. Nurtured by immersion in diverse artistic discipline, my delicate sensory perception<br>
+allows me to capture the invisible realms and bring a uniquely personal world to life on canvas.<br>
+At the core of my practice is the pursuit of ultimate, highly refined beauty—<br>
+expressing a quiet and profound dimension that exists beyond the visible surface.<br>
+<br>
+フランス育ち。多様な芸術に触れて育まれた繊細な感性をもとに、目に見えない領域、<br>
+そして自分の中にだけ存在する世界をキャンバスへと描き出しています。<br>
+追求するのは、どこまでも研ぎ澄まされた極限の「美」。目に見える枠組みを超えた、<br>
+静かで深い世界を表現しています。</p>
+
+
+
+
+
+<hr>
+  <h2>Links</h2>
+  <ul>
+    <li>
+      <a href="https://www.art-meter.com/artists/233c06d8-0394-4635-a4a0-88f5ed7346a7?fbclid=PAVERFWAU-cJFleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQZBTI0dbEncMhC8GJoLUDl9haKvUXNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp3EQAk6SNWgUwcWYcpVbVtTWZGl8e8vCkyfdt6lKz-vMCgzFFprDRrVjMpSQ_aem_NNX4_L0Mthg1MaGVWb77QQ" target="_blank">🎨 Buy Artworks (作品の購入はこちら)</a>
+    </li>
+    <li>
+      <a href="https://instagram.com/mikifbr" target="_blank">📷 Instagram</a>
+    </li>
+    <li>
+      <a href="mailto:miki.jp.fabbri@gmail.com">✉️ Contact (Email)</a>
+    </li>
+  </ul>
+
+<!-- ④ ★そのすぐ下に作品画像★ -->
+ <!-- 🎨 作品ギャラリー（10枚） -->
+<div class="gallery">
+  <img src="IMG_1.jpeg" alt="作品1">
+  <img src="IMG_2.jpeg" alt="作品2">
+  <img src="IMG_3.jpeg" alt="作品3">
+  <img src="IMG_4.jpeg" alt="作品4">
+  <img src="IMG_5.jpeg" alt="作品5">
+  <img src="IMG_6.jpeg" alt="作品6">
+  <img src="IMG_7.jpeg" alt="作品7">
+  <img src="IMG_8.jpeg" alt="作品8">
+  <img src="IMG_9.jpeg" alt="作品9">
+ 
+</div>
+
+</body>
+</html> 
