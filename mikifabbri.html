@@ -14,16 +14,13 @@
     /* ここから見た目（CSS）の設定 */
 
     body {
-      /* 左上から右下へ、淡いサーモンピンク(#ffdac1)からやわらかい黄色(#fff3b0)へ */
-    background: linear-gradient(135deg, #E97451, #FFBF00);
-    
-    /* 画面全体にグラデーションをきれいに広げるためのおまじない */
-    min-height: 100vh;
-    margin: 0;
-
+    background-color: #e3e3e3; /* 上質な薄いグレー */
+    color: #222222; /* 深みのあるダークグレー */
+    font-family: 'Cormorant Garamond', "Helvetica Neue", "Hiragino Kaku Gothic ProN", sans-serif;
+    letter-spacing: 0.08em;
+    line-height: 1.8;
+    padding: 0 20px;
       text-align: center;       /* 文字や画像をすべて中央揃えに */
-      font-family: 'PT Serif Caption', serif;  
-      padding: 40px 20px;       /* ページの上下左右に少し余白をつける */
     }
 
     /* 箇条書きのぽっち（黒丸）を消して綺麗に並べる */
@@ -32,10 +29,19 @@
       padding: 0;
     }
 
-    /* リンクの見た目を少し整える */
-    li {
-      margin: 15px 0;
-    }
+    a, a:link, a:visited, a:hover, a:active {
+  color: #222222 !important;       /* ずっと濃い文字色のまま固定 */
+  text-decoration: none !important; /* 下線を完全に消す */
+  border-bottom: none !important;   /* 下に線が出ていたらそれも消す */
+  background-color: transparent !important;
+  font-weight: 550 !important; /* 少しだけ文字を太くして存在感を出す */
+  transition: opacity 0.3s ease;
+}
+
+/* マウスを乗せた時だけ、上品にすっと薄くする */
+a:hover {
+  opacity: 0.6 !important;
+}
 
 h1 {
     font-size: 42px; /* 少しゆったり読める大きさ */
@@ -68,19 +74,20 @@ li {
   flex-wrap: wrap;           /* 端まで行ったら自動で改行する */
   justify-content: center;   /* 全体を中央に寄せる */
   gap: 15px;                 /* 画像と画像の間隔（隙間） */
-  max-width: 900px;          /* ギャラリー全体の最大幅 */
+  max-width: 1200px;          /* ギャラリー全体の最大幅 */
   margin: 0 auto 50px auto;  /* 画面の中央に配置し、下に50pxの余白 */
 }
 
 /* ギャラリー内の各画像の設定（1行に3枚並べる計算） */
 .gallery img {
-  width: calc(33.333% - 10px); /* 1行にちょうど3枚収まる幅 */
+  width: calc(20% - 12px); /* 1行にちょうど3枚収まる幅 */
   height: auto;                /* 縦横比を崩さない */
   object-fit: cover;           /* サイズが異なっても綺麗に揃える */
   border-radius: 4px;          /*（お好みで）角をほんのり丸く */
 }
 
   </style>
+
 
 
 
